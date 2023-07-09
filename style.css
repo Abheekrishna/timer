@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 *,*::after,*::before {
     box-sizing: border-box;
     padding: 0;
@@ -19,6 +21,7 @@ body {
 .time {
     font-size: 5.5rem;
     color: rgb(42, 42, 42);
+    font-family: 'Roboto slab';
 }
 
 .btns {
