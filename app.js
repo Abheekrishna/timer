@@ -2,6 +2,7 @@ const timeText = document.getElementById('time');
 const startBtn = document.getElementById('start');
 const stopBtn = document.getElementById('stop');
 const resetBtn = document.getElementById('reset');
+const year = document.getElementById('year');
 
 
 let seconds = 0;
@@ -63,3 +64,6 @@ resetBtn.addEventListener('click', () => {
     hours = 0;
     timeText.innerText = '00:00:00'
 })
+
+const newYear = (new Date()).getFullYear();
+year.innerText = newYear;

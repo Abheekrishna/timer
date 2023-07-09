@@ -57,3 +57,14 @@ body {
 .reset {
     background-color: rgb(72, 72, 72);
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+    margin-bottom: 20px;
+    font-size: 1.rem;
+}
+a {
+    color: rgb(0, 106, 255);
+}
