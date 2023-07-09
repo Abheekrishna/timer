@@ -4,3 +4,4 @@ const stopBtn = document.getElementById('stop');
 const resetBtn = document.getElementById('reset');
 
 
+let time = 0;
