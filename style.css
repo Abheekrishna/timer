@@ -17,7 +17,7 @@
 .btns {
     margin-top: 25px;
 }
-.start, .stop {
+.start, .stop, .reset {
     padding: 10px 25px;
     border: none;
     border-radius: 5px;
@@ -33,9 +33,15 @@
 .stop:hover {
     box-shadow: 0 0px 15px rgb(255, 41, 41);
 }
+.reset:hover {
+    box-shadow: 0 0px 15px rgb(72, 72, 72);
+}
 .start {
     background-color: rgb(0, 106, 255);
 }
 .stop {
     background-color: rgb(255, 41, 41);
+}
+.reset {
+    background-color: rgb(72, 72, 72);
 }
