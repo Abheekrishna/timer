@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 .container {
     display: flex;
@@ -12,6 +13,7 @@
 }
 .time {
     font-size: 5.5rem;
+    color: rgb(42, 42, 42);
 }
 
 .btns {
