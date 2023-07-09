@@ -3,6 +3,7 @@ const startBtn = document.getElementById('start');
 const stopBtn = document.getElementById('stop');
 const resetBtn = document.getElementById('reset');
 
+
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
@@ -31,16 +32,29 @@ const startWatch = () => {
     if(timer !== null) {
         clearInterval(timer);
     }
-    timer = setInterval(stopWatch, 1);
+    timer = setInterval(stopWatch, 10);
+    isRunning = true;
 }
 
-startBtn.addEventListener('click', () => {
-    startWatch();
-})
+const pauseWatch = () => {
+    clearInterval(timer);
+    isRunning = false;
+}
 
-stopBtn.addEventListener('click', () => {
-    clearInterval(timer)
-})
+let isRunning = false;
+
+
+const toggleWatch = () => {
+    if(isRunning) {
+        pauseWatch();
+    } else {
+        startWatch();
+    }
+}
+
+
+startBtn.addEventListener('click', toggleWatch);
+
 
 resetBtn.addEventListener('click', () => {
     clearInterval(timer);
